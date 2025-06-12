@@ -90,6 +90,7 @@ For the "Sign In form":
 - [ ] The "Sign in" button should submit the form to initiate field validation using the default browser mechanism.
 
 For the "Sign Up Form"
+P
 
 - [ ] The name input element
   - [ ] Should require a value.
@@ -110,17 +111,17 @@ For the "Sign Up Form"
   - [ ] Should require a value
   - [ ] The value should be validated to follow a template of telephone number strictly.
 - [ ] The avatar input
-  - [ ] Should be represented by a "Choose file" button allowing the user to select a file from their computer when clicked.
-- [ ] The state dropdown list
-  - [ ] Should be a dropdown list with a default option "Select your state" selected by default and three options with random state names (Iowa, etc.).
+  - [x] Should be represented by a "Choose file" button allowing the user to select a file from their computer when clicked.
+- [x] The state dropdown list
+  - [x] Should be a dropdown list with a default option "Select your state" selected by default and three options with random state names (Iowa, etc.).
   - [ ] The default option should be unavailable to be selected.
-- [ ] The city dropdown list
-  - [ ] Should be a dropdown list with a default option "Select your city" selected by default and three options with random city names (Dallas, etc.).
-  - [ ] The default option should be unavailable to be selected.
-- [ ] The Gender single-option group
-  - [ ] Clicking the label should activate the corresponding radio button.
-  - [ ] The "Other" option should be active (enabled) by default.
-- [ ] The "Sign in" button should submit the form to trigger field validation using the default browser mechanism.
+- [x] The city dropdown list
+  - [x] Should be a dropdown list with a default option "Select your city" selected by default and three options with random city names (Dallas, etc.).
+  - [x] The default option should be unavailable to be selected.
+- [x] The Gender single-option group
+  - [x] Clicking the label should activate the corresponding radio button.
+  - [x] The "Other" option should be active (enabled) by default.
+- [x] The "Sign in" button should submit the form to trigger field validation using the default browser mechanism.
 
 > E-commerce page
 
