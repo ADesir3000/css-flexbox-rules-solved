@@ -38,34 +38,31 @@ section {
 
 .header-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 70px;
 }
 
 .logo-search {
   display: flex;
-  align-items: center;
   gap: 20px;
-  flex-grow: 1;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   min-width: max-content;
   font-size: 28px;
   font-weight: 900;
   font-family: "Caveat", sans-serif;
-  color: white;
 }
 
 .search-bar {
+  display: flex;
+  align-self: center;
   width: 400px;
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
-  margin-right: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;   
 }
 
 .search-bar input {
@@ -73,27 +70,31 @@ section {
   border: none;
   outline: none;
   background-color: transparent;
-  color: #ffffff;
+  color: #8d8ba5;
   font-size: 16px;
   padding: 4px 0;
 }
 
-.search-bar i {
-  color: #ffffff;
-
+.search-icon {
+  display: flex;
+  align-items: center;
+  color: #8d8ba5;
 }
 
 .options {
   display: flex;
   gap: 20px;
-  align-items: center;
-  justify-content: center;
 }
 
 .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
+  gap: 5px; 
+
 }
 
 .option i {
@@ -102,12 +103,11 @@ section {
 }
 
 .categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #2b2d36;
   padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
 }
 
 .category {
@@ -120,7 +120,6 @@ section {
   text-align: center;
   border-radius: 8px;
   border: 1px solid transparent;
-  
 }
 
 .category:hover,
@@ -133,8 +132,14 @@ section {
 }
 
 .view-options {
-    display: flex;
-  gap: 10px;  
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  gap: 10px;
+}
+.view-option {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -143,17 +148,17 @@ i.fa-th-list {
 }
 
 .section-control {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ffffff;
   display: flex;
-  justify-content: flex-end;
-  gap: 600px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #8d8ba5;
 }
 
 .section-control .view-option {
   width: 40px;
   height: 40px;
-  border: 1px solid #ffffff;
+  border: 1px solid #8d8ba5;
   cursor: pointer;
 }
 
@@ -162,7 +167,7 @@ i.fa-th-list {
 }
 
 .product {
-  border: 1px solid #ffffff;
+  border: 1px solid #8d8ba5;
   border-radius: 8px;
   overflow: hidden;
   background-color: #2b2d36;
@@ -176,12 +181,11 @@ i.fa-th-list {
 
 .product-name {
   font-size: 28px;
-  color: white;
 }
 
 .product-description {
   line-height: 24px;
-  color: #ffffff;
+  color: #8d8ba5;
 }
 
 .product-price {
@@ -194,20 +198,16 @@ i.fa-th-list {
 }
 
 .buy-btn {
-background-color: tomato;
+  background-color: tomato;
   color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 10px 18px;
   border: none;
+  outline: none;
   border-radius: 6px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
 }
 
 /* 👇👇👇  EDIT STYLES BENEATH  👇👇👇*/
@@ -217,20 +217,14 @@ background-color: tomato;
 .grid.products {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 .grid .product {
-  width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%; 
-  min-height: 550px; 
-  background-color: #2b2d36;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
-  overflow: hidden;
+  width: 300px;
+  padding-bottom: 30px;
 }
 
 .grid .product-image-wrapper {
@@ -238,31 +232,28 @@ background-color: tomato;
 }
 
 .grid .product-data {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  
+  padding-top: 20px;
 }
 
 .grid .product-info {
-  padding: 20px 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   flex-grow: 1;
-  color: white;
   text-align: center;
-  
+  padding: 0 20px 30px;
 }
 
 .grid .product-action {
-  padding-top: 30px;
-  border-top: 1px solid #ffffff;
-  justify-content: center;
   display: flex;
-width: 100%;
-box-sizing: border-box;
-align-items: center;
-
-
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 30px;
+  border-top: 1px solid #8d8ba5;
 }
 
 /* LINE VIEW STYLES */
@@ -270,47 +261,32 @@ align-items: center;
 .lines.products {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .lines .product {
   display: flex;
-  gap: 20px;                      
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid #ffffff;
-  border-radius: 8px;             
-  background-color: #2b2d36;
+  gap: 30px;
+  padding: 20px;
 }
-
 
 .lines .product-image-wrapper {
   min-width: 300px;
   height: 200px;
-  overflow: hidden;
-  border-radius: 8px;
-  padding: 10px;
 }
 
-.lines .product-data {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-
+.lines .product-data,
 .lines .product-info {
-  gap: 6px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  
+  justify-content: center;
+  gap: 20px;
 }
 
 .lines .product-action {
-  padding-left: 30px;
- 
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 /* LINES-ACTION VIEW */
@@ -318,47 +294,39 @@ align-items: center;
 .lines-action.products {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  overflow: hidden;
+  gap: 30px;
 }
 
 .lines-action .product {
   display: flex;
-  gap: 20px;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .lines-action .product-image-wrapper {
   min-width: 300px;
   height: 200px;
-  overflow: hidden;
-  border-radius: 8px;
-  padding: 10px;
 }
 
 .lines-action .product-data {
   display: flex;
-  width: 100%;
-  align-items: center;
 }
-
 .lines-action .product-info {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 100%;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+}
+.product-action * {
+  width: max-content;
 }
 
 .lines-action .product-action {
-  border-left: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
-  height: 150px;
-  flex-direction: column;
-  display: flex;
-  gap: 20px;
-  align-items: center;
 }

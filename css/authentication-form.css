@@ -1,5 +1,3 @@
-/* 👇👇👇 SCROLL DOWN TO THE "ADD YOUR FORM STYLES BENEATH" comment (line 25) 👇👇👇*/
-
 * {
   padding: 0;
   margin: 0;
@@ -7,191 +5,114 @@
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
-  height: 100%;
-color: #000000;
-background-color: #5c5252;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
 }
 
+.content {
+  display: flex;
+}
 
-
+h2 {
+  text-transform: uppercase;
+}
 
 p {
   font-weight: bold;
 }
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
-
-.content {
+form {
+  border: 1px solid #a9a9a9;
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px; 
-  width: 100%;
-  min-height: 100vh;
-  flex-wrap: wrap; 
-  padding: 40px 20px;
-  box-sizing: border-box;
+  flex-direction: column;
+  gap: 30px;
 }
-#sign-up{
-  width: 500px;
-  padding: 40px;
-  font-size: 16px;
+
+.subtext {
+  color: #a9a9a9;
+  font-weight: unset;
 }
-#sign-in{
-  height: 100px;
-}
+
 #sign-in,
 #sign-up {
   display: flex;
   flex-direction: column;
-  width: 100vh;
-  max-width: 700px;
-  color: #ffffff;
-  background: rgba(30, 26, 26, 0.6);
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 0 10px black;
-  backdrop-filter: blur(10px);
-  height: auto;
-  
-  
+  gap: 30px;
+  width: 100%;
+  padding: 20px;
 }
 
-
-.form-header {
-  text-align: center;
-}
-
-h2 {
-  text-transform: uppercase;
-  font-size: 24px;
-  text-align: center;
-}
-
-.subtext {
-  color: #dcdcdc;
-  font-weight: normal;
-
-}
-
-.form-input-control {
+.form-input-control
+{
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-bottom: 30px;
 }
-.form-row{
+.form-submit-control {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.form-row > *{
-  margin-bottom: 6px;
+a {
+  color: #335eea;
+  text-decoration: none;
 }
 
 label {
-  font-weight: normal;
+  font-weight: bold;
 }
-
-input[type='checkbox'] + label,
-input[type='radio'] + label {
-  font-weight: normal;
-
-}
-
-/* Input styles */
-input,
 select {
-  color: #f1f1f1; 
-  background-color: rgba(30, 30, 30, 0.5);
-  border: 1px solid #ffffffdd;
-  border-radius: 8px;
-  padding: 4px 12px;
   height: 30px;
+}
+input {
   width: 100%;
+  height: 30px;
+  padding: 5px;
 }
 
-input::placeholder {
-  color: rgba(255, 255, 255, 0.85);
+input[type="checkbox"],
+input[type="radio"] {
+  width: max-content;
+  height: max-content;
+  padding: 0;
+  font-weight: normal;
 }
 
-
-input[type='file'] {
-  border: none;
-  height: auto;
-}
-
-/* Checkbox and Radio controls */
-input[type='checkbox'],
-input[type='radio'] {
-  height: auto;
-  width: auto;
-  color: #2108ac;
-  accent-color: #294bbb;
-}
-
-/* Submit button */
-input[type='submit'] {
-  background-color: #ffffff;
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 40px;
-  height: auto;
-  padding: 12px 20px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-input[type='submit']:hover {
-  background-color: #294bbb;
+input[type="submit"] {
+  width: unset;
+  height: unset;
+  padding: 14px 20px;
+  background: #335eea;
   color: white;
+  font-size: 18px;
+  border: 1px solid #335eea;
+  border-radius: 8px;
+  appearance: none;
   outline: none;
+  clear: left;
+  cursor: pointer;
 }
 
-/* Radio group layout */
-.form-radio-control {
-  display: flex;
-  align-items: center;
-  gap: 10px; 
+input[type="submit"]:hover {
+  background: #294bbb;
 }
-
-
-.form-group-vertical-control {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  
-}
-
-
 .form-group-horizontal-control {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-#state,
-#city {
-  background-color: rgba(34, 35, 36, 0.8); /* Custom dark blue background */
-  color: #ffffff; /* White text */
-  border: 1px solid #ffffffaa;
+ 
+  gap: 30px;
+  width: 300px; 
 }
 
-
-a {
-  color: #ffffffd4;
-  text-decoration: none;
-  font-size: 14px;
+.form-checkbox-control > label,
+.form-radio-control > label {
+  font-weight: normal;
 }
-
-a:hover {
-  text-decoration: underline;
+#city, #state{
+  width: 300px;
 }
-
-
-#sign-in {
-  box-shadow: 0 0 10px #000000;
+.form-group-horizontal-control{
+  display: flex;
 }
